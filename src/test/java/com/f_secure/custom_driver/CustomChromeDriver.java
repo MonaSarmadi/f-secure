@@ -1,5 +1,4 @@
-package com.f_secure.screenplay.custom_driver;
-
+package com.f_secure.custom_driver;
 import lombok.extern.slf4j.Slf4j;
 import net.thucydides.core.webdriver.DriverSource;
 import org.openqa.selenium.WebDriver;
