@@ -1,10 +1,10 @@
 package com.f_secure.features;
 
 import com.f_secure.model.InterviewPhase;
-import com.f_secure.questions.generic_questions.GetTextValue;
 import com.f_secure.questions.generic_questions.IsDisplayed;
 import cucumber.api.java.en.Given;
 
+import static com.f_secure.ui.InterviewPhaseSection.getContentOfSelectedPhase;
 import static com.f_secure.ui.InterviewPhaseSection.interviewPhaseLabel;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
@@ -19,6 +19,6 @@ public class WhenVerifyTheInterviewPhaseSection {
     @SuppressWarnings("unchecked")
     @Given("^(.*) verify that interview phase content is visible$")
     public void verifyThatInterviewPhaseContentIsVisible(String actorName) {
-        theActorCalled(actorName).should(seeThat(GetTextValue.fromTheElement(interviewPhaseLabel(InterviewPhase.INTERVIEWS))));
+        theActorCalled(actorName).should(seeThat(IsDisplayed.theElement(getContentOfSelectedPhase(InterviewPhase.INTERVIEWS))));
     }
 }

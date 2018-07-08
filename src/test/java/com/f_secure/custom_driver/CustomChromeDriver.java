@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class CustomChromeDriver implements DriverSource {
     private final static String WEB_DRIVER_PROVIDED_TYPE ="webdriver.provided.type";
     private final static String WEB_DRIVER_CHROME_DRIVER ="webdriver.chrome.driver";
+    private final static String WEB_DRIVER_PATH ="chromedriver.exe";
     private final static String MY_DRIVER ="mydriver";
     private final static String USE_AUTOMATION_EXTENSION ="useAutomationExtension";
 
@@ -19,9 +20,8 @@ public class CustomChromeDriver implements DriverSource {
     }
 
     private void setSystemChromeProperty(){
-        String path="E:\\practice-code\\f-secure\\chromedriver.exe";
         System.setProperty(WEB_DRIVER_PROVIDED_TYPE,MY_DRIVER);
-        System.setProperty(WEB_DRIVER_CHROME_DRIVER,path);
+        System.setProperty(WEB_DRIVER_CHROME_DRIVER, WEB_DRIVER_PATH);
     }
 
     private ChromeOptions disableChromeAutomationExtension(){
