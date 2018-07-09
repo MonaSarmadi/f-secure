@@ -1,7 +1,8 @@
-This Application is a simple attempt for using Serenity and cucumber
-for Acceptance test.
+This is a simple application for Acceptance test
+It uses Cucumber and Serenity and Java
 
-Serenity is basically a wrapper for selenium.
+The implementation of scenarios are in com.f_secure.features
 
-using cucumber gave me the ability to read and write code as fluent as in english
-very understandable
+It uses simple assertation
+
+This application is not a show case for database interaction

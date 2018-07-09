@@ -16,4 +16,5 @@ Feature: UI Test
 
   Scenario: Find Quality Engineer Job title
     Then Mona verify poznan from drop down menu is visible
-#    Then Mark verify quality engineer job title
+    When Mona clicks poznan from drop down list
+    Then Mona verify quality engineer exist

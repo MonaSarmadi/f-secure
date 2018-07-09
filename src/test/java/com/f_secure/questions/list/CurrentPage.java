@@ -13,7 +13,6 @@ public class CurrentPage implements Question<String> {
     private CurrentPage() {
     }
 
-
     @Override
     @Step("{0} is asserting that the current page is 2")
     public String answeredBy(Actor actor) {
