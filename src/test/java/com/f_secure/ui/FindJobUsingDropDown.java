@@ -8,11 +8,12 @@ public class FindJobUsingDropDown extends PageObject {
     public static Target dropDownCityName(City city) {
         return Target
                 .the("Drop down menu name")
-                .locatedBy("//div[@role='combobox']//ul//li//a//span[contains(text(),'"
+                .locatedBy("//section[@class='m-y-2']//div//option[contains(text(),'"
                         + city.getName() + "')]");
     }
 
     public static final Target JOB_ADS_LIST = Target
             .the("Job Ads Active")
-            .locatedBy("//div[@id='job-ads']//article[@class='border-b p-b-2']");
+            .locatedBy("//div[@class='row']//div//article[@class='border-b p-b-2']");
 }
+

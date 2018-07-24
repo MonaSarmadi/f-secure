@@ -14,7 +14,7 @@ public class CurrentPage implements Question<String> {
     }
 
     @Override
-    @Step("{0} is asserting that the current page is 2")
+    @Step("{0} is asserting that the current page is 1")
     public String answeredBy(Actor actor) {
         String currentPageTextValue = actor
                 .asksFor(GetTextValue.fromTheElement(CURRENT_PAGE));

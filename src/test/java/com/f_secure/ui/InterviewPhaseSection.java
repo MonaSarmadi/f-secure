@@ -18,6 +18,4 @@ public class InterviewPhaseSection extends PageObject {
                 .locatedBy("//div[@id='"
                         + interviewPhase.getContent() + "']");
     }
-
-
 }

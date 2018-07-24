@@ -5,8 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.targets.Target;
+import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -21,7 +21,7 @@ public class GetTextValue implements Question<String>, Performable {
     public String answeredBy(Actor actor) {
         String targetTextValue = Text.of(target).viewedBy(actor).resolve();
         log.info("target element " + target.getName()
-                + " has retrieved text from web elements: " + targetTextValue);
+               + " has retrieved text from web elements: " + targetTextValue);
         return targetTextValue;
     }
 

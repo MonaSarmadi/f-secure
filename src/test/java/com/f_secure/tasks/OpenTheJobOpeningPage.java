@@ -7,7 +7,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 @Slf4j
@@ -27,6 +26,7 @@ public class OpenTheJobOpeningPage implements Task {
     }
 
     public static OpenTheJobOpeningPage withAddressAlreadySet(){
+
         return instrumented(OpenTheJobOpeningPage.class);
     }
 }

@@ -1,4 +1,5 @@
 package com.f_secure.custom_driver;
+
 import lombok.extern.slf4j.Slf4j;
 import net.thucydides.core.webdriver.DriverSource;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 @Slf4j
 public class CustomChromeDriver implements DriverSource {
+
     private final static String WEB_DRIVER_PROVIDED_TYPE ="webdriver.provided.type";
     private final static String WEB_DRIVER_CHROME_DRIVER ="webdriver.chrome.driver";
     private final static String WEB_DRIVER_PATH ="chromedriver.exe";
@@ -29,6 +31,7 @@ public class CustomChromeDriver implements DriverSource {
         chromeOptions.setExperimentalOption(USE_AUTOMATION_EXTENSION,false);
         log.info("'useAutomationExtension' flag is disabled");
         return chromeOptions;
+
     }
 
     @Override

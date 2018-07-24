@@ -16,6 +16,4 @@ public class JobOpeningListSection extends PageObject {
     public static final Target CURRENT_PAGE = Target
             .the("Current Page")
             .locatedBy("//div[@class='text-center']//ul//li[@class='active']//span[@class='current']");
-
-
 }
