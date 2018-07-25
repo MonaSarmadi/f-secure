@@ -3,10 +3,8 @@ package com.f_secure.questions.dropdown;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.thucydides.core.annotations.Step;
-
 import java.util.List;
 import java.util.function.Predicate;
-
 import static com.f_secure.InMemoryListKey.listofJobInPoznanKey;
 
 public class CheckIfQualityEngineer implements Question<Boolean> {

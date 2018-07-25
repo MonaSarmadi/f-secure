@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -20,19 +20,11 @@ public class ForHomePhaseSection extends PageObject{
             .the("freedom vpn")
             .locatedBy("//*[@id=\"frontpage_funnel\"]/div/div/div[2]/div/div[1]/ul/li[3]/a");
 
-
-    public static Target forHomePhaseLable(ForHomeItems forHomeItems) {
+    public static Target forHomePhaseSection(ForHomeItems forHomeItems) {
         return Target
-                .the("ForHome Phase Label")
+                .the("ForHome Phase Section")
                 .locatedBy("//section[@id='frontpage_funnel']//div//h5[contains(text(),'"
 
                         + forHomeItems.getItem() + "')]");
     }
-
-//    public static Target getContentOfSelectedForHomePhase(ForHomeItems forHomeItems) {
-//        return Target
-//                .the("ForHome Phase Content")
-//                .locatedBy("//section[@id='frontpage_funnel']//div//h5//p[contains(text(),'"
-//                        + forHomeItems.getContent() + "']");
-//    }
 }

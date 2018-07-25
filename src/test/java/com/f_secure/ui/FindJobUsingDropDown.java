@@ -5,10 +5,10 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class FindJobUsingDropDown extends PageObject {
-    public static Target dropDownCityName(City city) {
+    public static Target dropDownJobCityName(City city) {
         return Target
                 .the("Drop down menu name")
-                .locatedBy("//section[@class='m-y-2']//div//option[contains(text(),'"
+                .locatedBy("//div//section[@class='m-y-2']//div//option[contains(text(),'"
                         + city.getName() + "')]");
     }
 

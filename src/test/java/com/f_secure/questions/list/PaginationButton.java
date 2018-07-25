@@ -14,7 +14,6 @@ public class PaginationButton implements Question<Boolean> {
     private PaginationButton() {
     }
 
-
     @Override
     @Step("{0} is checking job opening list pagination")
     public Boolean answeredBy(Actor actor) {

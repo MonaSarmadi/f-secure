@@ -66,5 +66,4 @@ public class WhenOpenTheJobOpeningPage {
             Serenity.takeScreenshot();
         }
     }
-
 }

@@ -14,7 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static com.f_secure.ui.FindJobUsingDropDown.dropDownCityName;
+import static com.f_secure.ui.FindJobUsingDropDown.dropDownJobCityName;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
@@ -30,7 +30,7 @@ public class WhenFindQualityEngineerJobTitle {
 
     @When("^(.*) clicks poznan from drop down list$")
     public void shouldClicksPoznanFromDropDownList(String actorName){
-        WebElement element = browser.findElement(By.xpath(dropDownCityName(City.POZNAN).getCssOrXPathSelector()));
+        WebElement element = browser.findElement(By.xpath(dropDownJobCityName(City.POZNAN).getCssOrXPathSelector()));
         JavascriptExecutor executor = (JavascriptExecutor)browser;
         executor.executeScript("arguments[0].click();", element);
         theActorCalled(actorName).should(seeThat(CurrentPage.textValue(),Matchers.is("1")));

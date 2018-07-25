@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static com.f_secure.ui.FindJobUsingDropDown.dropDownCityName;
+import static com.f_secure.ui.FindJobUsingDropDown.dropDownJobCityName;
 @Slf4j
 public class DropDownMenu implements Question<Boolean> {
     private DropDownMenu(){
@@ -15,7 +15,7 @@ public class DropDownMenu implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         Boolean isPoznanExist = actor
-                .asksFor(IsDisplayed.theElement(dropDownCityName(City.POZNAN)));
+                .asksFor(IsDisplayed.theElement(dropDownJobCityName(City.POZNAN)));
         log.info("Is Poznan exist in drop down menu: " + isPoznanExist);
         return isPoznanExist;
     }
