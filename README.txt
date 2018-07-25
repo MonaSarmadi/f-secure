@@ -15,4 +15,4 @@ import the project using pom.xml
 go to runner class
 click on the green play button
 
-make sure your chrome browser is up to date.
+you have to put your chrome driver next to the pom.xml(make sure that the version of your chrome browser is compatible with your chrome driver)
