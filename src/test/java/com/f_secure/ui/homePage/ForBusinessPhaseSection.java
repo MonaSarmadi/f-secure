@@ -1,6 +1,6 @@
-package com.f_secure.ui;
+package com.f_secure.ui.homePage;
 
-import com.f_secure.model.ForBusinessItems;
+import com.f_secure.model.homePage.ForBusinessItems;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 

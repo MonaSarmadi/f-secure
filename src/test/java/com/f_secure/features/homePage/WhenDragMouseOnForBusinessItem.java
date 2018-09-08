@@ -1,14 +1,14 @@
-package com.f_secure.features;
+package com.f_secure.features.homePage;
 
 import com.f_secure.HoverMouse;
-import com.f_secure.model.ForBusinessItems;
+import com.f_secure.model.homePage.ForBusinessItems;
 import com.f_secure.questions.generic_questions.IsDisplayed;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import static com.f_secure.ui.ForBusinessPhaseSection.FOR_Business;
-import static com.f_secure.ui.ForBusinessPhaseSection.forBusinessPhaseSection;
+import static com.f_secure.ui.homePage.ForBusinessPhaseSection.FOR_Business;
+import static com.f_secure.ui.homePage.ForBusinessPhaseSection.forBusinessPhaseSection;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
@@ -21,13 +21,11 @@ public class WhenDragMouseOnForBusinessItem {
     @Then("^(.*) verify that For BUSINESS item is visible$")
     public void monaVerifyThatForBUSINESSItemIsVisible(String actorName){
         theActorCalled(actorName).should(seeThat(IsDisplayed.theElement(FOR_Business)));
-
     }
 
     @When("^(.*) drag mouse pointer on For BUSINESS item$")
     public void monaDragMousePointerOnForBUSINESSItem(String actorName){
         theActorCalled(actorName).attemptsTo(HoverMouse.over(FOR_Business));
-
     }
 
     @Then("^(.*) should only see items containing 'Protection Service for Business', " +

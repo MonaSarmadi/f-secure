@@ -1,11 +1,11 @@
-package com.f_secure.features;
+package com.f_secure.features.jobOpeningPage;
 
-import com.f_secure.model.InterviewPhase;
+import com.f_secure.model.jobPeningPage.InterviewPhase;
 import com.f_secure.questions.generic_questions.IsDisplayed;
 import cucumber.api.java.en.Given;
 
-import static com.f_secure.ui.InterviewPhaseSection.getContentOfSelectedPhase;
-import static com.f_secure.ui.InterviewPhaseSection.interviewPhaseLabel;
+import static com.f_secure.ui.jobOpeningPage.InterviewPhaseSection.getContentOfSelectedPhase;
+import static com.f_secure.ui.jobOpeningPage.InterviewPhaseSection.interviewPhaseLabel;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 

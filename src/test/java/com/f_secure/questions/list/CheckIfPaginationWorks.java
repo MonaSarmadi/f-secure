@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.f_secure.InMemoryListKey.listOfJobAdsFirstPage;
-import static com.f_secure.ui.FindJobUsingDropDown.JOB_ADS_LIST;
+import static com.f_secure.ui.jobOpeningPage.FindJobUsingDropDown.JOB_ADS_LIST;
 
 @Slf4j
 public class CheckIfPaginationWorks implements Question<Boolean> {

@@ -1,4 +1,4 @@
-package com.f_secure.tasks;
+package com.f_secure.tasks.jobOpeningPage;
 
 import com.f_secure.InMemoryListKey;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.f_secure.ui.FindJobUsingDropDown.JOB_ADS_LIST;
+import static com.f_secure.ui.jobOpeningPage.FindJobUsingDropDown.JOB_ADS_LIST;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class RememberJobAdsForPoznan implements Task {

@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.thucydides.core.annotations.Step;
 
-import static com.f_secure.ui.JobOpeningListSection.CURRENT_PAGE;
+import static com.f_secure.ui.jobOpeningPage.JobOpeningListSection.CURRENT_PAGE;
 
 @Slf4j
 public class CurrentPage implements Question<String> {

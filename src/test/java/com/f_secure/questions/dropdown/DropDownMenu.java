@@ -1,12 +1,12 @@
 package com.f_secure.questions.dropdown;
 
-import com.f_secure.model.City;
+import com.f_secure.model.jobPeningPage.City;
 import com.f_secure.questions.generic_questions.IsDisplayed;
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static com.f_secure.ui.FindJobUsingDropDown.dropDownJobCityName;
+import static com.f_secure.ui.jobOpeningPage.FindJobUsingDropDown.dropDownJobCityName;
 @Slf4j
 public class DropDownMenu implements Question<Boolean> {
     private DropDownMenu(){

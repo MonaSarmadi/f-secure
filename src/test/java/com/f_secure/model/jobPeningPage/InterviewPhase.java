@@ -1,4 +1,4 @@
-package com.f_secure.model;
+package com.f_secure.model.jobPeningPage;
 
 public enum InterviewPhase {
     APPLYING("Applying", "apply"),

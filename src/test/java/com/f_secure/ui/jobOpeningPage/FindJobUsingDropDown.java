@@ -1,6 +1,6 @@
-package com.f_secure.ui;
+package com.f_secure.ui.jobOpeningPage;
 
-import com.f_secure.model.City;
+import com.f_secure.model.jobPeningPage.City;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 

@@ -1,9 +1,9 @@
-package com.f_secure.features;
+package com.f_secure.features.jobOpeningPage;
 
 import com.f_secure.questions.list.CheckIfPaginationWorks;
 import com.f_secure.questions.list.CurrentPage;
 import com.f_secure.questions.list.PaginationButton;
-import com.f_secure.tasks.RememberJobAdsList;
+import com.f_secure.tasks.jobOpeningPage.RememberJobAdsList;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -14,7 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static com.f_secure.ui.JobOpeningListSection.NEXT_BUTTON_PAGINATION_CLICKABLE;
+import static com.f_secure.ui.jobOpeningPage.JobOpeningListSection.NEXT_BUTTON_PAGINATION_CLICKABLE;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 

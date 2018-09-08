@@ -1,6 +1,6 @@
-package com.f_secure.tasks;
+package com.f_secure.tasks.jobOpeningPage;
 
-import com.f_secure.ui.FSecureJobOpeningPage;
+import com.f_secure.ui.jobOpeningPage.FSecureJobOpeningPage;
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

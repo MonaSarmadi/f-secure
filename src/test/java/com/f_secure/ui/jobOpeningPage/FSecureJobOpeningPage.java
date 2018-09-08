@@ -1,4 +1,4 @@
-package com.f_secure.ui;
+package com.f_secure.ui.jobOpeningPage;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;

@@ -1,6 +1,6 @@
-package com.f_secure.ui;
+package com.f_secure.ui.jobOpeningPage;
 
-import com.f_secure.model.InterviewPhase;
+import com.f_secure.model.jobPeningPage.InterviewPhase;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 

@@ -1,12 +1,12 @@
-package com.f_secure.features;
+package com.f_secure.features.jobOpeningPage;
 
 import com.f_secure.HoverMouse;
 import com.f_secure.Maximise;
-import com.f_secure.tasks.ClickOnJobOpenningsPage;
-import com.f_secure.tasks.ClickOnTheCareersPage;
-import com.f_secure.tasks.OpenTheHomePage;
-import com.f_secure.ui.FindJobOpeningsPage;
-import com.f_secure.ui.FindTabsInAboutGlobalPage;
+import com.f_secure.tasks.jobOpeningPage.ClickOnJobOpenningsPage;
+import com.f_secure.tasks.jobOpeningPage.ClickOnTheCareersPage;
+import com.f_secure.tasks.homePage.OpenTheHomePage;
+import com.f_secure.ui.jobOpeningPage.FindJobOpeningsPage;
+import com.f_secure.ui.aboutGlobalPage.FindTabsInAboutGlobalPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import cucumber.api.Scenario;

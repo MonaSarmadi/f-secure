@@ -1,12 +1,12 @@
-package com.f_secure.features;
+package com.f_secure.features.homePage;
 
 import com.f_secure.HoverMouse;
 import com.f_secure.Maximise;
-import com.f_secure.model.ForHomeItems;
+import com.f_secure.model.homePage.ForHomeItems;
 import com.f_secure.questions.generic_questions.IsDisplayed;
-import static com.f_secure.ui.ForHomePhaseSection.FOR_HOME;
-import static com.f_secure.ui.ForHomePhaseSection.forHomePhaseSection;
-import com.f_secure.tasks.OpenTheHomePage;
+import static com.f_secure.ui.homePage.ForHomePhaseSection.FOR_HOME;
+import static com.f_secure.ui.homePage.ForHomePhaseSection.forHomePhaseSection;
+import com.f_secure.tasks.homePage.OpenTheHomePage;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 import cucumber.api.java.en.Given;

@@ -1,10 +1,10 @@
-package com.f_secure.features;
+package com.f_secure.features.jobOpeningPage;
 
-import com.f_secure.model.City;
+import com.f_secure.model.jobPeningPage.City;
 import com.f_secure.questions.dropdown.CheckIfQualityEngineer;
 import com.f_secure.questions.dropdown.DropDownMenu;
 import com.f_secure.questions.list.CurrentPage;
-import com.f_secure.tasks.RememberJobAdsForPoznan;
+import com.f_secure.tasks.jobOpeningPage.RememberJobAdsForPoznan;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Managed;
@@ -14,7 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static com.f_secure.ui.FindJobUsingDropDown.dropDownJobCityName;
+import static com.f_secure.ui.jobOpeningPage.FindJobUsingDropDown.dropDownJobCityName;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 

@@ -1,6 +1,6 @@
-package com.f_secure.tasks;
+package com.f_secure.tasks.homePage;
 
-import com.f_secure.ui.FSecureHomePage;
+import com.f_secure.ui.homePage.FSecureHomePage;
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
