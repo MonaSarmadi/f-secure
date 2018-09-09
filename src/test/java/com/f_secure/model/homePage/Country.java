@@ -5,6 +5,7 @@ public enum Country {
 
     Polska("Polska"),
     UK("UK"),
+    FR("France"),
     USA("USA");
 
     private final String name;

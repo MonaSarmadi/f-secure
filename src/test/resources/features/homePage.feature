@@ -13,3 +13,8 @@ Feature: HomePage Test
     When Mona drag mouse pointer on For BUSINESS item
     Then Mona should only see items containing 'Protection Service for Business', 'F Secure Rapid Detection & Response Service' and 'F-Secure Rapid Detection & Response'
 
+  Scenario: Verify For Country Selector Icon
+    When Mona choose her country from country selector icon
+    Then Mona should see her country name in the bottom of the page
+
+
