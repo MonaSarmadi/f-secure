@@ -1,4 +1,4 @@
-Feature: UI Test
+Feature: UI Test Job Opening Page
 
   Background: Open The Job Openings Page
     Given that Mona has open the f secure Home Page

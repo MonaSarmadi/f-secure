@@ -2,11 +2,11 @@ package com.f_secure.features.jobOpeningPage;
 
 import com.f_secure.HoverMouse;
 import com.f_secure.Maximise;
-import com.f_secure.tasks.jobOpeningPage.ClickOnJobOpenningsPage;
+import com.f_secure.tasks.jobOpeningPage.ClickOnJobOpeningsPage;
 import com.f_secure.tasks.jobOpeningPage.ClickOnTheCareersPage;
 import com.f_secure.tasks.homePage.OpenTheHomePage;
-import com.f_secure.ui.jobOpeningPage.FindJobOpeningsPage;
-import com.f_secure.ui.aboutGlobalPage.FindTabsInAboutGlobalPage;
+import com.f_secure.ui.careersPage.FindTabsInCareersPage;
+import com.f_secure.ui.careersPage.SubmenusCareerTab;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import cucumber.api.Scenario;
@@ -53,11 +53,11 @@ public class WhenOpenTheJobOpeningPage {
     @Then("^(.*) mouse hover on careers tab and click on job openings item$")
     public void monaMouseHoverOnCareersTabAndClickOnJobOpeningsItem(String actorName) {
         theActorCalled(actorName)
-                .attemptsTo(HoverMouse.over(FindTabsInAboutGlobalPage.CareersTab));
+                .attemptsTo(HoverMouse.over(FindTabsInCareersPage.CareersTab));
         theActorCalled(actorName)
-                .attemptsTo(HoverMouse.over(FindJobOpeningsPage.JobOpeningsPage));
+                .attemptsTo(HoverMouse.over(SubmenusCareerTab.JobOpeningsPage));
         theActorCalled(actorName)
-                .attemptsTo(ClickOnJobOpenningsPage.withTheAddressAlreadySet());
+                .attemptsTo(ClickOnJobOpeningsPage.withTheAddressAlreadySet());
     }
 
     @After()

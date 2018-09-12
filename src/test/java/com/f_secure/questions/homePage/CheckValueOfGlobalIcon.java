@@ -1,6 +1,5 @@
 package com.f_secure.questions.homePage;
 
-
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Question;
 import net.thucydides.core.annotations.Step;

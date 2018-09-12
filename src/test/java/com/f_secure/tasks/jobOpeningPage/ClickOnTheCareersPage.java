@@ -1,6 +1,6 @@
 package com.f_secure.tasks.jobOpeningPage;
 
-import com.f_secure.ui.jobOpeningPage.FindCareersPage;
+import com.f_secure.ui.homePage.FindCareersLinkInHomePage;
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -13,13 +13,13 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class ClickOnTheCareersPage implements Task{
 
     @Steps
-    private FindCareersPage findCareersPage;
+    private FindCareersLinkInHomePage findCareersLinkInHomePage;
 
     @Override
     @Step("{0} click on the careers page")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(FindCareersPage.CareersPage));
+                Click.on(FindCareersLinkInHomePage.CareersLink));
 
         log.info(actor.getName() + " click on the careers page");
     }
